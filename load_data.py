@@ -5,7 +5,7 @@ from keras.utils import Sequence
 from skimage.io import imread
 
 
-def load_data(nr_of_channels, batch_size=5, nr_A_train_imgs=None, nr_B_train_imgs=None,
+def load_data(nr_of_channels, batch_size=48, nr_A_train_imgs=None, nr_B_train_imgs=None,
               nr_A_test_imgs=None, nr_B_test_imgs=None, subfolder='',
               generator=False, D_model=None, use_multiscale_discriminator=False, use_supervised_learning=False, REAL_LABEL=1.0):
 
@@ -68,7 +68,7 @@ def normalize_array(array):
 
 class data_sequence(Sequence):
 
-    def __init__(self, trainA_path, trainB_path, image_list_A, image_list_B, batch_size=5):  # , D_model, use_multiscale_discriminator, use_supervised_learning, REAL_LABEL):
+    def __init__(self, trainA_path, trainB_path, image_list_A, image_list_B, batch_size=48):  # , D_model, use_multiscale_discriminator, use_supervised_learning, REAL_LABEL):
         self.batch_size = batch_size
         self.train_A = []
         self.train_B = []
