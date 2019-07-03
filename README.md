@@ -1,1 +1,1 @@
-# FieldmapGAN
+# fMRI GAN
