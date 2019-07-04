@@ -2,7 +2,7 @@
 
 clear
 
-MaximumThreads=8 # Maximum number of parallel downloads to use
+MaximumThreads=8 # Maximum number of parallel threads to use
 threads=0
 
 Study=Beijing
